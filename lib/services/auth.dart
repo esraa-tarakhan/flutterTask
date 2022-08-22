@@ -77,8 +77,9 @@ class AuthMethods{
 
       SnackBarWidget(msg: "Account has been Created.");
 
-    final isVerfied= (Navigator.push(context, MaterialPageRoute(builder: (c)=> VerifyPage())) )as bool;
-      isVerfied ?Navigator.push(context, MaterialPageRoute(builder: (c)=> HomeScreen())):"";
+    // final isVerfied= (Navigator.push(context, MaterialPageRoute(builder: (c)=> VerifyPage())) )as bool;
+    //   isVerfied ?Navigator.push(context, MaterialPageRoute(builder: (c)=> HomeScreen())):"";
+      Navigator.push(context, MaterialPageRoute(builder: (c)=> HomeScreen()));
     }
     else
     {
